@@ -9,7 +9,7 @@
 
     <StackPanel>
         <Button Content="Sort Ascending" Click="ButtonBase_OnClick" />
-        <ListBox ItemsSource="{Binding DdItems}" Height="700"> <!--switch to DdItems and sort to trigger crash -->
+        <ListBox ItemsSource="{Binding RegItems}" Height="700"> <!--switch to DdItems and click sort button to trigger crash -->
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <local:VirtualizingWrapPanel ChildHeight="50" ChildWidth="50" />
